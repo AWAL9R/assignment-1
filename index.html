@@ -7,6 +7,10 @@
     <title>Webflow - Own your templates</title>
     <link rel="shortcut icon" href="icon.png" type="image/png">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        *{
+            font-family: "Inter", sans-serif;
+        }
         /* *{ xbox-sizing: border-box;} */
         :root {
             --primary: #4E47FF;
@@ -54,11 +58,17 @@
             color: white;
             border-radius: 10px;
             font-weight: bold;
-            transition: background-color 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            box-sizing: border-box;
+            margin: 0.5em 0.5em;
+            --side-margin: 2em;
         }
 
         button:hover {
-            background-color: #837eff
+            background-color: #837eff;
+            padding: 1.5em 2.5em;
+            margin: 0em 0em;
+            --side-margin: 1em;
         }
 
 
@@ -102,6 +112,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
         }
 
         .main1_title {
@@ -289,6 +300,11 @@
             justify-content: left;
             gap: 1em;
             padding: 3em;
+            align-items: stretch;
+        }
+
+        form>div{
+            margin:  0 0.5em;
         }
 
         input,
@@ -317,8 +333,8 @@
 <main>
         <section class="container main1">
             <div class="main1_title">
-                <h1> See It in Action</h1>
-                <p>Explore the live preview and imagine your brand in this bold new look.</p>
+                <h1 > See It in Action</h1>
+                <p >Explore the live preview and imagine your brand in this bold new look.</p>
                 <div><button>Launch Live Preview</button></div>
             </div>
             <div>
@@ -421,9 +437,9 @@
                     <div><textarea name="message" id="message" placeholder="write your message..." rows="6"></textarea>
                     </div>
                 </div>
-                <div>
-                    <button style="width:100%">Get in Touch</button>
-                </div>
+                
+                    <button xstyle="display: block; width:calc(100% - var(--side-margin))">Get in Touch</button>
+                
             </form>
         </section>
         <section style="background-color: white; width: 100%;" class="nav_parent">
