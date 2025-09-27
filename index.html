@@ -61,7 +61,104 @@
             background-color: #837eff
         }
 
-       
+
+
+        .hero {
+            /* margin-top: 150px; */
+            padding: 150px 0;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-weight: bold;
+            font-size: 65px;
+            color: var(--secoundary);
+        }
+
+
+
+
+
+        a {
+            all: unset;
+            cursor: pointer;
+        }
+
+        a:visited {
+            all: unset;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        footer .nav_parent {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid red; */
+            color: var(--secoundary2);
+            padding: 103px 0;
+        }
+
+        footer .nav_section {
+            max-width: 530px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer_logo {
+            font-size: 100px;
+            font-weight: 900;
+            color: var(--primary);
+        }
+
+
+
+        .footer_navs {
+            margin: 20px 0;
+            display: flex;
+            gap: 2em;
+        }
+
+        .footer_contact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3em;
+            justify-content: space-between;
+            margin-bottom: 3em;
+            align-items: center;
+        }
+
+
+        .get_in_touch {
+            font-size: 97px;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            gap: 1em;
+            padding: 3em;
+        }
+
+        input,
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -76,7 +173,54 @@
             <button>Stay Focused</button>
         </section>
     </header>
-    
+
+
+
+    <footer class=" ">
+        <section class="container footer_contact">
+            <div class="get_in_touch">
+                Let’s Get in Touch
+            </div>
+            <form>
+                <div>
+                    <div style="font-weight: 600; padding: 5px">Email</div>
+                    <div><input type="email" name="email" id="email" placeholder="example@email.com"></div>
+                </div>
+                <div>
+                    <div style="font-weight: 600; padding: 5px">Name</div>
+                    <div><input type="text" name="name" id="name" placeholder="John Doe"></div>
+                </div>
+                <div>
+                    <div style="font-weight: 600; padding: 5px">Message</div>
+                    <div><textarea name="message" id="message" placeholder="write your message..." rows="6"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button style="width:100%">Get in Touch</button>
+                </div>
+            </form>
+        </section>
+        <section style="background-color: white; width: 100%;" class="nav_parent">
+            <div class="nav_section">
+
+                <div class="footer_logo">WEBFLOW</div>
+                <div>
+                    Ready to elevate your online presence? Contact us today to discuss your project and discover how we
+                    can
+                    bring your vision to life.
+                </div>
+                <div class="footer_navs">
+
+                    <a href="#">About</a>
+                    <a href="#">How it Works</a>
+                    <a href="#">Services</a>
+                    <a href="#">Home</a>
+
+                </div>
+            </div>
+
+        </section>
+    </footer>
 </body>
 
 </html>
