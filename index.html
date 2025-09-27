@@ -16,6 +16,7 @@
             --primary: #4E47FF;
             --secoundary: #252432;
             --secoundary2: #8987A1;
+            --btn-hover-enlargement: 0.3em;
         }
 
         body {
@@ -60,15 +61,16 @@
             font-weight: bold;
             transition: all 0.5s ease-in-out;
             box-sizing: border-box;
-            margin: 0.5em 0.5em;
-            --side-margin: 2em;
+            margin: var(--btn-hover-enlargement);
+            
         }
 
         button:hover {
             background-color: #837eff;
-            padding: 1.5em 2.5em;
-            margin: 0em 0em;
+            padding: 1.3em 2.3em;
+            margin: 0em;
             --side-margin: 1em;
+            color: #222;
         }
 
 
@@ -304,7 +306,7 @@
         }
 
         form>div{
-            margin:  0 0.5em;
+            margin:  0 var(--btn-hover-enlargement);
         }
 
         input,
@@ -367,12 +369,11 @@
                             src='Assets/icon-star.png' /> <img src='Assets/icon-star.png' /> <img
                             src='Assets/icon-star.png' /></div>
                     <h4>Loved by Designers</h4>
-                    <p style="font-size: 1em; color: #333;">This template instantly leveled up our presence.” – Studio
-                        Vertex</p>
+                    <p style="font-size: 1em; color: #333;">Clean, modern templates that save me hours of design work!</p>
                     <div class="profile"><img src="Assets/avatar.png" alt="" class="avatar_img">
                         <div>
-                            <div>Reviewer name</div>
-                            <div class="date">Date</div>
+                            <div>John Regan</div>
+                            <div class="date">20 Sep 2025</div>
                         </div>
                     </div>
                 </div>
@@ -381,12 +382,11 @@
                             src='Assets/icon-star.png' /> <img src='Assets/icon-star.png' /> <img
                             src='Assets/icon-star-d.png' /></div>
                     <h4>Loved by Designers</h4>
-                    <p style="font-size: 1em; color: #333;">This template instantly leveled up our presence.” – Studio
-                        Vertex</p>
+                    <p style="font-size: 1em; color: #333;">Super easy to customize — I had my site live in a day.</p>
                     <div class="profile"><img src="Assets/avatar.png" alt="" class="avatar_img">
                         <div>
-                            <div>Reviewer name</div>
-                            <div class="date">Date</div>
+                            <div>Alex Kudassel</div>
+                            <div class="date">28 Aug 2025</div>
                         </div>
                     </div>
                 </div>
@@ -395,12 +395,11 @@
                             src='Assets/icon-star.png' /> <img src='Assets/icon-star-d.png' /> <img
                             src='Assets/icon-star-d.png' /></div>
                     <h4>Loved by Designers</h4>
-                    <p style="font-size: 1em; color: #333;">This template instantly leveled up our presence.” – Studio
-                        Vertex</p>
+                    <p style="font-size: 1em; color: #333;">High-quality designs at a price that feels like a steal.</p>
                     <div class="profile"><img src="Assets/avatar.png" alt="" class="avatar_img">
                         <div>
-                            <div>Reviewer name</div>
-                            <div class="date">Date</div>
+                            <div>Warren Buffet</div>
+                            <div class="date">19 Aug 2025</div>
                         </div>
                     </div>
                 </div>
@@ -412,7 +411,7 @@
                 Ready to focus better
             </h3>
             <p>This template instantly leveled up our presence.” – Studio Vertex</p>
-            <button>Ger Started Free</button>
+            <button>Get Started Free</button>
             <img src="Assets/wc-big.png" alt="">
         </section>
     </main>
